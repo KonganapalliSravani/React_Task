@@ -1,0 +1,56 @@
+.recent-studies {
+  margin-top: 2em;
+}
+
+.recent-studies h3 {
+  margin-bottom: 1em;
+}
+
+.recent-studies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-studies li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.recent-studies li.completed {
+  background-color: #d4edda;
+}
+
+.recent-studies li.in-progress {
+  background-color: #fff3cd;
+}
+
+.recent-studies li.failed {
+  background-color: #f8d7da;
+}
+
+.status-buttons {
+  display: flex;
+  gap: 0.5em;
+}
+
+.status-button {
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.status-button.active {
+  background-color: #007bff;
+}
+
+.status-button:not(.active):hover {
+  background-color: #0056b3;
+}

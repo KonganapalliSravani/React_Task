@@ -1,0 +1,104 @@
+/* NavBar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-links li:hover,
+.nav-links .active {
+  color: #1abc9c;
+}
+
+.nav-links .active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #1abc9c;
+  border-radius: 2px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.user-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.settings {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.settings:hover {
+  color: #1abc9c;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: white;
+  color: #333;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.settings:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu li:hover {
+  background-color: #ecf0f1;
+}

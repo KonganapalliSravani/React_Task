@@ -1,0 +1,144 @@
+.third-page {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.side-panel {
+  flex: 1;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ccc;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-button {
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.given-information {
+  margin-bottom: 2em;
+}
+
+.search-info {
+  background-color: #e9ecef;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.recents {
+  margin-bottom: 1em;
+}
+
+.recents ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recents li {
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.completed {
+  background-color: #d4edda;
+}
+
+.in-progress {
+  background-color: #fff3cd;
+}
+
+.failed {
+  background-color: #f8d7da;
+}
+
+.case-flow {
+  flex: 2;
+  padding: 2em;
+  overflow-y: auto;
+}
+
+.case-flow h3 {
+  margin-bottom: 1em;
+}
+
+.case-flow p {
+  margin-bottom: 1.5em;
+}
+
+.flow-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin-bottom: 2em;
+}
+
+.section h4 {
+  margin-bottom: 0.5em;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section li {
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.steps-panel {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 2em;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.steps-panel h3 {
+  margin-bottom: 1em;
+}
+
+.steps-panel ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.steps-panel li {
+  margin-bottom: 0.5em;
+}
+
+.continue-button {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.continue-button:hover {
+  background-color: #0056b3;
+}

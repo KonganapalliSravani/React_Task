@@ -1,0 +1,61 @@
+/* StepNavigation.css */
+
+.step-navigation {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.step-navigation ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+}
+
+.step-navigation ul li.active {
+  color: #007bff;
+}
+
+.step-navigation ul li::before {
+  content: "⚪";
+  margin-right: 10px;
+  color: #999;
+}
+
+.step-navigation ul li.active::before {
+  content: "🔵";
+  color: #007bff;
+}
+
+.continue-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.continue-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.continue-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}

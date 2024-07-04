@@ -1,0 +1,130 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  cursor: pointer;
+}
+
+.navbar ul li.active {
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.sidebar button {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.given-information {
+  margin-top: 20px;
+}
+
+.given-information .search {
+  margin-bottom: 20px;
+}
+
+.recents {
+  margin-top: 20px;
+}
+
+.recents .recent-item {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.recents .completed {
+  background-color: #d4edda;
+}
+
+.recents .in-progress {
+  background-color: #fff3cd;
+}
+
+.recents .failed {
+  background-color: #f8d7da;
+}
+
+.recents .todo {
+  background-color: #d1ecf1;
+}
+
+.case-flow {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.case-flow .sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.case-flow .section {
+  width: 30%;
+}
+
+.case-flow .section h4 {
+  margin-bottom: 10px;
+}
+
+.case-flow .section div {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.case-flow .continue {
+  margin-top: 20px;
+}
+
+.case-flow .continue button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.todo-list {
+  padding: 20px;
+}
+
+.todo-list input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.todo-list button {
+  padding: 10px;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list ul li {
+  background-color: #e9ecef;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
